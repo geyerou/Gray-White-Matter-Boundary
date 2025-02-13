@@ -14,11 +14,11 @@ data=y_IdealFilter(data',0.72,[0.01 0.1])';
 data=single(reshape(data,size(subcor_mask,1),size(subcor_mask,2),size(subcor_mask,3),size(data,2)));
 
 %% calculation of GWFC for left hemisphere
-surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.L.white.164k_fs_LR.surf.gii'); % read white matter left surface file
-surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.L.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness left surface file
+surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.L.white.164k_fs_LR.surf.gii'); % read white matter left surface file provided by HCP
+surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.L.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness left surface file provided by HCP
 V=surfG.vertices-surfW.vertices;
 V=normalize(V,2,'norm');
-tmp=gifti('\HCP_1200\100206\MNINonLinear\100206.L.thickness.164k_fs_LR.shape.gii'); % read left cortical thickness measurment for excluding zero thickness vertices
+tmp=gifti('\HCP_1200\100206\MNINonLinear\100206.L.thickness.164k_fs_LR.shape.gii'); % read left cortical thickness measurment provided by HCP for excluding zero thickness vertices
 tmplate_L=tmp;
 thk=tmp.cdata;
 
@@ -38,11 +38,11 @@ tmplate.cdata=ALFF_W2G;
 y_Write(ALFF_W2G,tmplate,'GWBPR.lh.gii');
 
 
-surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.R.white.164k_fs_LR.surf.gii'); % read white matter right surface file
-surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.R.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness right surface file
+surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.R.white.164k_fs_LR.surf.gii'); % read white matter right surface file provided by HCP
+surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.R.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness right surface file provided by HCP
 V=surfG.vertices-surfW.vertices;
 V=normalize(V,2,'norm');
-tmp=gifti('\HCP_1200\100206\MNINonLinear\100206.R.thickness.164k_fs_LR.shape.gii'); % read right cortical thickness measurment for excluding zero thickness vertices
+tmp=gifti('\HCP_1200\100206\MNINonLinear\100206.R.thickness.164k_fs_LR.shape.gii'); % read right cortical thickness measurment for excluding zero thickness vertices provided by HCP
 tmplate_R=tmp;
 thk=tmp.cdata;
 
