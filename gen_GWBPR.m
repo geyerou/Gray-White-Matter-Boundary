@@ -14,7 +14,7 @@ data(subcor_mask>0,:)=0;
 data=y_IdealFilter(data',0.72,[0.01 0.1])'; % band filter the data, keep compoment within [0.01 0.1]
 data=single(reshape(data,size(subcor_mask,1),size(subcor_mask,2),size(subcor_mask,3),size(data,2)));
 
-%% calculation of GWFC for left hemisphere
+%% calculation of GWBPR for left hemisphere
 surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.L.white.164k_fs_LR.surf.gii'); % read white matter left surface file provided by HCP
 surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.L.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness left surface file provided by HCP
 V=surfG.vertices-surfW.vertices;
@@ -35,9 +35,9 @@ ALFF_W2G(isnan(ALFF_W2G))=0;
 ALFF_W2G(thk==0)=0;
 tmplate=tmplate_L;
 tmplate.cdata=ALFF_W2G;
-y_Write(ALFF_W2G,tmplate,'GWBPR.lh.gii'); % save the data.
+y_Write(ALFF_W2G,tmplate,'GWBPR.lh.gii'); 
 
-
+%% calculation of GWBPR for left hemisphere
 surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.R.white.164k_fs_LR.surf.gii'); % read white matter right surface file provided by HCP
 surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.R.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness right surface file provided by HCP
 V=surfG.vertices-surfW.vertices;
