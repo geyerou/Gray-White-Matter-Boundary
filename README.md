@@ -15,9 +15,9 @@ Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and
 Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
 Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
 
-This folder contains two MATLAB scripts, which are currently only compatible with data downloaded from the Human Connectome Project (HCP) database.
+This folder contains two MATLAB scripts, which are currently only compatible with preprocessed data downloaded from the Human Connectome Project (HCP) database.
 
-The script Gen_GWFC.m is used to calculate the GWFC (Global White Matter Functional Connectivity). To run this script, several image datasets need to be prepared from HCP, including:
+The script Gen_GWFC.m is used to calculate the GWFC. To run this script, several image datasets need to be prepared from HCP, including:
 
 resting-state fMRI data,
 the structural segmentation map (wmparc),
@@ -26,7 +26,7 @@ the midthickness surface image, and
 the cortical thickness map.
 All of these datasets are available for each subject in the HCP database.
 
-The script Gen_GWBPR.m is used to compute the GWBPR (Global White Matter BOLD Power Ratio). To use this script, you will need the following input data:
+The script Gen_GWBPR.m is used to compute the GWBPR. To use this script, you will need the following input data:
 
 the fALFF map (which can be computed using software such as DPABI),
 the structural segmentation map (wmparc),
