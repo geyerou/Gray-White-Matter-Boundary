@@ -2,6 +2,7 @@ clear;
 clc;
 
 %% SPM12, GIFTI and DPABI are required before running this code.
+%% this code compute the GWFC for one of the HCP subjects (study ID: 100206)
 
 %% load rsfMRI data and maskout the subcortical structures.
 img=spm_vol('\HCP_1200\100206\fmri.nii.gz'); % read your prerpcessed rsfMRI data. 
