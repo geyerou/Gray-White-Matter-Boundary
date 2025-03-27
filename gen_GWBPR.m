@@ -37,7 +37,7 @@ tmplate=tmplate_L;
 tmplate.cdata=ALFF_W2G;
 y_Write(ALFF_W2G,tmplate,'GWBPR.lh.gii'); 
 
-%% calculation of GWBPR for left hemisphere
+%% calculation of GWBPR for right hemisphere
 surfW=gifti('\HCP_1200\100206\MNINonLinear\100206.R.white.164k_fs_LR.surf.gii'); % read white matter right surface file provided by HCP
 surfG=gifti('\HCP_1200\100206\MNINonLinear\100206.R.midthickness.164k_fs_LR.surf.gii'); % read mid-thickness right surface file provided by HCP
 V=surfG.vertices-surfW.vertices;
