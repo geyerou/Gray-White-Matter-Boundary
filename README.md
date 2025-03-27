@@ -15,6 +15,6 @@ Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and
 Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
 Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
 
-In this folder, two Matlab scripts are included,and the current version only compatible with data downloaded from Human conectome (HCP) database. The Gen_GWFC.m is used for calculating the GWFC. Some iage data need to be prepared from HCPand the gen_GWBPR is used for calculating the GWBPR.
+In this folder, two Matlab scripts are included,and the current version only compatible with data downloaded from Human conectome (HCP) database. The Gen_GWFC.m is used for calculating the GWFC. Some iage data need to be prepared from HCP, inluding the resting fMRI data, the strucual secmentation map wmparc, the white matter surface image, the midthickness surface image, and the cortical thickness map. all data are avalble for each subject in HCP. and the gen_GWBPR is used for calculating the GWBPR. you need to prepare the data including: 
 
 
