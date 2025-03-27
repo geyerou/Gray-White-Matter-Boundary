@@ -10,10 +10,10 @@ SPM, DPABI and GIFTI toolboxes are required for running the matlab script. Parti
 (1)Download DPABI: Visit the DPABI website (http://rfmri.org/DPABI) and download the latest version of DPABI.
 (2)Extract Files: Extract the downloaded DPABI package to a desired directory.
 (3)Add DPABI to MATLAB Path: Similar to adding SPM, add the DPABI directory to your MATLAB path.
-3. Installing GIFT (Group ICA of fMRI Toolbox)
-(1)Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and download the latest version of GIFT.
-(2)Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
-(3)Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
+3. Installing GIFTI
+(1)Download GIFTI: Go to the GIFTI website (https://www.nitrc.org/projects/gifti/) and download the latest version of GIFT.
+(2)Extract Files: Extract the GIFTI package into a folder where you keep your MATLAB toolboxes.
+(3)Add GIFTI to MATLAB Path: Add the GIFTI directory to your MATLAB path.
 
 This folder contains two MATLAB scripts, which are currently only compatible with preprocessed data downloaded from the Human Connectome Project (HCP) database.
 
