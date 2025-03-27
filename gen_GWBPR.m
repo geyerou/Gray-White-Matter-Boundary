@@ -2,6 +2,7 @@ clear;
 clc;
 
 %% SPM12, GIFTI and DPABI are required before running this code.
+%% this code compute the GWBPR for one of the HCP subjects (study ID: 100206)
 
 %% read fALFF data and maskout the subcortical structures.
 img=spm_vol('\HCP_1200\100206\fALFF.nii.gz'); % read your fALFF image. 
