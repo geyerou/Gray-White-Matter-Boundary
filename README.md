@@ -3,17 +3,17 @@ The matlab scripts are for calcualting two new metrics of functional activity th
 
 SPM, DPABI and GIFTI toolboxes are required for running the matlab script. Particularly, DPABI toolbox can be used for calculating the fALFF map, which is the input for GWBPR.
 1. Installing SPM (Statistical Parametric Mapping)
-  (1)Download SPM: Go to the SPM website (https://www.fil.ion.ucl.ac.uk/spm/) and download the latest version of SPM. Choose the version that is compatible with your MATLAB version.
-  (2)Extract Files: Extract the downloaded files to a directory on your computer that you can easily access.
-  (3)Add SPM to MATLAB Path: Open MATLAB and add the SPM directory to your MATLAB path.
+(1)Download SPM: Go to the SPM website (https://www.fil.ion.ucl.ac.uk/spm/) and download the latest version of SPM. Choose the version that is compatible with your MATLAB version.
+(2)Extract Files: Extract the downloaded files to a directory on your computer that you can easily access.
+(3)Add SPM to MATLAB Path: Open MATLAB and add the SPM directory to your MATLAB path.
 2. Installing DPABI (Data Processing & Analysis for Brain Imaging)
-  (1)Download DPABI: Visit the DPABI website (http://rfmri.org/DPABI) and download the latest version of DPABI.
-  (2)Extract Files: Extract the downloaded DPABI package to a desired directory.
-  (3)Add DPABI to MATLAB Path: Similar to adding SPM, add the DPABI directory to your MATLAB path.
+(1)Download DPABI: Visit the DPABI website (http://rfmri.org/DPABI) and download the latest version of DPABI.
+(2)Extract Files: Extract the downloaded DPABI package to a desired directory.
+(3)Add DPABI to MATLAB Path: Similar to adding SPM, add the DPABI directory to your MATLAB path.
 3. Installing GIFT (Group ICA of fMRI Toolbox)
-  (1)Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and download the latest version of GIFT.
-  (2)Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
-  (3)Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
+(1)Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and download the latest version of GIFT.
+(2)Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
+(3)Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
 
 This folder contains two MATLAB scripts, which are currently only compatible with preprocessed data downloaded from the Human Connectome Project (HCP) database.
 
