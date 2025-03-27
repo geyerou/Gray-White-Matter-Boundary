@@ -10,8 +10,9 @@ Add SPM to MATLAB Path: Open MATLAB and add the SPM directory to your MATLAB pat
 Download DPABI: Visit the DPABI website (http://rfmri.org/DPABI) and download the latest version of DPABI.
 Extract Files: Extract the downloaded DPABI package to a desired directory.
 Add DPABI to MATLAB Path: Similar to adding SPM, add the DPABI directory to your MATLAB path.
+3. Installing GIFT (Group ICA of fMRI Toolbox)
 Download GIFT: Go to the GIFT website (http://mialab.mrn.org/software/gift/) and download the latest version of GIFT.
 Extract Files: Extract the GIFT package into a folder where you keep your MATLAB toolboxes.
 Add GIFT to MATLAB Path: Add the GIFT directory to your MATLAB path.
 
-In this folder, two matlab scripts are included. The Gen_GWFC.m is used for calculating the GWFC, and the gen_GWBPR is used for calculating the GWBPR.
+In this folder, two Matlab scripts are included. The Gen_GWFC.m is used for calculating the GWFC, and the gen_GWBPR is used for calculating the GWBPR.
